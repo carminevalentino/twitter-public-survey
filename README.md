@@ -16,3 +16,17 @@ Use Instructions
   - Execute streaming.py [#keyword] - Argument required to focus search on a word/words
   - After 10,000 Tweets have been collected a new file will be started with a unique timestamp (edit this in slistener.py)
   - twitterJSONParser.py [filepath.json] - Pass the json filename captured by streaming.py to this file to build the CSV file and Parse the JSON Data
+  - In R Studio install package tm, wordcloud
+  - Edit RStudio to reflect path of csv file in relations to your working directory path
+  - Compile to generate output (.png file)
+
+
+Goals of this Project
+  - To Identify public opinion/feeling towards a particular topic by analyzing commonly tweeted adjectives
+  - Determine Publics overall status to the new Xbox console and analyze nouns and keywords to reflect consumer interest
+
+
+Unmet Goals
+  - Location based tracking (Not enough Data)
+  - Sentence Structure Parsing and Analysis for further dissimenation
+  - "Dial-in" gradient transitions of keywords with workcloud API
