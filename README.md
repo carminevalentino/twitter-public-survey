@@ -30,3 +30,6 @@ Unmet Goals
   - Location based tracking (Not enough Data)
   - Sentence Structure Parsing and Analysis for further dissimenation
   - "Dial-in" gradient transitions of keywords with workcloud API
+
+Large Spectrum Usages
+  - Quickly and Efficiently Aggregate real-time twitter data for big picture snapshots of events, trends and other highly discussed developing issues/stories/events. From a market analysis this can derrive a snapshot of public opinion and gain insight on widely discussed issues going on in the world.
