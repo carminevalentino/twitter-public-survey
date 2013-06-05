@@ -16,10 +16,10 @@ jsonfile = args.jsonfile
 
 
 #Twitter OAUTH Keys
-CONSUMER_KEY = ""
-CONSUMER_SECRET = ""
-ACCESS_KEY = ""
-ACCESS_SECRET = ""
+CONSUMER_KEY = "XP2LOssMKdKjLr2sokxjQ"
+CONSUMER_SECRET = "OibFI1Yth5JrQtYS8TeAeCFuhJzvp20u31vUV0BDZk"
+ACCESS_KEY = "74259315-57BSgJ6ayZ6tNjVUG7JHyK5OZHhfaNLRjYHUw06NP"
+ACCESS_SECRET = "mhscreHR74MDhJhSpotVxEZvLzMtHzq1qNyzDOYKeg"
 
 #Establish OAUTH Connection
 consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
@@ -42,7 +42,7 @@ for n in tweets:
 csv_file = open('/var/www/public/csv/' + jsonfile + ".csv", 'wb')
 csv_write = csv.writer(csv_file)
 	
-headerString = ['time', 'text']
+headerString = ['text']
 	
 csv_write.writerow(headerString)
 
@@ -53,7 +53,7 @@ for i in range(0,countJsonArray):
 	tweetText = tweets[i]['text']
 	tweetText = unicode(tweetText).encode("utf-8")
 
-        tweetString = [tweetDate + "," + tweetText]
+        tweetString = [tweetText]
 	csv_write.writerow(tweetString)
 
 
