@@ -14,7 +14,7 @@ Use Instructions
   - Modify streaming.py to include Twitter OAUTH token and file save path
   - Execute streaming.py [#keyword] - Argument required to focus search on a word/words
     - Note * If attempting to collect data on multiple keywords (i.e "Apple iPhone") Put Single Quotes around keyword. (i.e. $python streaming.py 'apple iphone')
-  - After 20,000 Tweets have been collected a new file will be started with a unique timestamp (edit this in slistener.py)
+  - After 5,000 Tweets have been collected a new file will be started with a unique timestamp (edit this in slistener.py)
   - twitterJSONParser.py [filepath.json] - Pass the json filename captured by streaming.py to this file to build the CSV file and Parse the JSON Data
   - In R Studio install package tm, wordcloud
   - Edit RStudio to reflect path of csv file in relations to your working directory path
