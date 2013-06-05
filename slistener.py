@@ -33,8 +33,8 @@ class SListener(StreamListener):
 
         self.counter += 1
 
-        if self.counter >= 20000:
-#	    self.output.write("{}]")
+        if self.counter >= 5000:
+	    self.output.write("{}]")
             self.output.close()
             self.output = open('/var/www/public/json/' + self.fprefix + '.' 
                                + time.strftime('%Y%m%d-%H%M%S') + '.json', 'w')
