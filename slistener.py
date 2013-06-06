@@ -7,7 +7,8 @@ class SListener(StreamListener):
         self.api = api or API()
         self.counter = 0
         self.fprefix = fprefix
-        self.output  = open('/var/www/public/json/' + fprefix + '.' 
+	fprefixStrip = fprefix.replace(" ", "")
+        self.output  = open('/var/www/public/json/' + fprefixStrip + '.' 
                             + time.strftime('%Y%m%d-%H%M%S') + '.json', 'w')
         self.output.write("[")
         self.delout  = open('delete.txt', 'a')
@@ -34,9 +35,9 @@ class SListener(StreamListener):
         self.counter += 1
 
         if self.counter >= 5000:
-	    self.output.write("{}]")
+#	    self.output.write("{}]")
             self.output.close()
-            self.output = open('/var/www/public/json/' + self.fprefix + '.' 
+            self.output = open('/var/www/public/json/' + fprefixStrip + '.' 
                                + time.strftime('%Y%m%d-%H%M%S') + '.json', 'w')
             self.counter = 0
 
